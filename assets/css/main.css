@@ -4121,6 +4121,7 @@ input, select, textarea {
 		padding: 2em 1.5em;
 		transition: all 0.3s ease;
 		text-align: center;
+		border-bottom: none;
 	}
 
 	.service-link:hover {
