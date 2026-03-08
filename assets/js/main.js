@@ -216,4 +216,14 @@
 		$banner
 			._parallax();
 
+	// Click en banner para ir a la siguiente sección.
+		$banner.on('click', function(e) {
+			// Si el click es en un link, NO hacer nada (dejar que funcione normalmente)
+			if ($(e.target).closest('a').length > 0) {
+				return;
+			}
+			// Simular click en el botón "Siguiente"
+			$banner.find('.goto-next').click();
+		});
+
 })(jQuery);
